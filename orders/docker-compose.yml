@@ -1,0 +1,9 @@
+services:
+  orders:
+    build:
+      context: .
+      target: build
+
+    container_name: orders
+    ports:
+      - '3000:3000'

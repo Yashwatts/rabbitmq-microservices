@@ -1,0 +1,9 @@
+services:
+  notification:
+    build:
+      context: .
+      target: build
+
+    container_name: notification
+    ports:
+      - '3001:3001'
