@@ -48,7 +48,7 @@ export class RabbitMQConsumer implements OnModuleInit {
       durable: true,
     });
 
-    await this.channel.prefetch(3); // process one unacknowledged message at a time
+    await this.channel.prefetch(3); // process three unacknowledged message at a time
 
     await this.channel.consume(
       'notification.queue', // queue name

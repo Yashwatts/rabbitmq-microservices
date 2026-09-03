@@ -9,5 +9,4 @@ import { NotificationsController } from './notifications.controller';
   providers: [RabbitMQConsumer, NotificationsService],
   exports: [RabbitMQConsumer, NotificationsService],
 })
-
 export class NotificationsModule {}
